@@ -1475,7 +1475,7 @@ with tab3:
                 hovertemplate="<b>%{label}</b><br>R$ %{value:,.2f}<br>%{percent}<extra></extra>",
             ))
             fig_s.update_layout(
-                **{k:v for k,v in PLOT.items() if k not in ["xaxis","yaxis"]},
+                **{k:v for k,v in PLOT.items() if k not in ["xaxis","yaxis","legend"]},
                 height=altura_donut,
                 showlegend=True,
                 legend=dict(orientation="v", yanchor="middle", y=0.5,
