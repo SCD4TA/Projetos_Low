@@ -282,7 +282,7 @@ def chamar_gemini(api_key: str, system_prompt: str, user_prompt: str) -> str:
     """Chama o Gemini Flash e retorna o texto da resposta.
     Tenta gemini-2.0-flash primeiro, cai para versões anteriores se necessário."""
     genai.configure(api_key=api_key)
-    modelos = ["gemini-2.0-flash", "gemini-1.5-flash-latest", "gemini-1.5-flash", "gemini-pro"]
+    modelos = ["gemini-2.0-flash", "gemini-1.5-flash-latest", "gemini-1.5-flash"]
     ultimo_erro = None
     for nome_modelo in modelos:
         try:
